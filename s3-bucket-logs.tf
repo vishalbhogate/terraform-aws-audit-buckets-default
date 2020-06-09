@@ -1,5 +1,5 @@
 resource aws_s3_bucket "logs" {
-  bucket = "${var.org_name}-audit-config-${data.aws_region.current.name}"
+  bucket = "${var.org_name}-audit-logs-${data.aws_region.current.name}"
   acl    = "Private"
   #policy
 
